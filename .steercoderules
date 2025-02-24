@@ -13,13 +13,13 @@ All components from shadcn/ui are already installed and ready to use. You can im
 ```tsx
 import { Button } from "@/components/ui/button"
 ```
-You can use toast from sonner as it's already included in App.tsx:
+You can use toast from sonner as it's already included in main.tsx:
 ```tsx
 import { toast } from "sonner"
 toast("Hello World")
 toast.success("Success")
 ```
-You can use dark/light mode as the App is wrapped in a ThemeProvider. You can use ModeToggle to toggle the theme.
+You can use dark/light mode as the App is already wrapped in a ThemeProvider. You can use ModeToggle to toggle the theme.
 ```tsx
 import { ModeToggle } from "@/components/mode-toggle"
 ```
