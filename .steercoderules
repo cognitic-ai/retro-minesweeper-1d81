@@ -1,0 +1,35 @@
+This is a clean template for a React project with TypeScript, Vite, TailwindCSS, Shadcn UI, and Lucide Icons.
+
+All source code is in the `src` folder
+To start, make changes in `App.tsx`
+
+## Styling
+To edit the default colors, edit the css variables in `src/index.css`
+To edit the theme including animations, edit `tailwind.config.js`
+For styles, always use tailwind v3, DO NOT create new css files.
+
+## Components
+All components from shadcn/ui are already installed and ready to use. You can import them with the following syntax:
+```tsx
+import { Button } from "@/components/ui/button"
+```
+You can use toast from sonner as it's already included in App.tsx:
+```tsx
+import { toast } from "sonner"
+toast("Hello World")
+toast.success("Success")
+```
+You can use dark/light mode as the App is wrapped in a ThemeProvider. You can use ModeToggle to toggle the theme.
+```tsx
+import { ModeToggle } from "@/components/mode-toggle"
+```
+
+## Icons
+You can use the following syntax to import icons from lucide-react:
+import { Moon, Sun } from "lucide-react"
+
+## Animations
+For animations, motion package (previously framer-motion) is already installed:
+```tsx
+import { motion } from "motion/react"
+```
