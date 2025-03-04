@@ -8,6 +8,10 @@ export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
     port: 3000,
+    allowedHosts: [
+      ".e2b.dev", 
+      ".e2b-foxtrot.dev"
+    ]
   },
   plugins: [
     react(),
